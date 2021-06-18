@@ -3,9 +3,7 @@
 
 const numeriCompresi = (array,min,max) => {
     const newArrey = array.filter((element,index) => {
-        if (index >= min && index <= max) {           
-            return element ;
-        }
+        return index >= min && index <= max;
     });
     return newArrey;
 }
